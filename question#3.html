@@ -1,0 +1,63 @@
+<html>
+	<head>	
+		<title>Form</title>
+		<script type="text/javascript">
+			function validation(){
+				var x = document.getElementById('acc').value
+				if(x == ''){
+					alert("Please input account number");
+				}
+			}
+		</script>
+		<style>
+			table{
+				margin-top:25px;
+				border-spacing: 1em 1em;
+				padding: 0 2em 1em 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<table align="center">
+				<form method='post' name='form'>
+					<tr>
+						<td>Bank</td> 
+						<td><select>
+								<option value="Kumari Bank">Kumari Bank</option>
+								<option value="NRB">Nepal Rastrya Bank</option>
+								<option value="Nabil">Nabil Bank</option>
+							</select><br/>
+						</td>
+					</tr>
+					<tr>
+						<td>Branch </td>
+						<td><select>
+								<option value="Putalisadak">Putalisadak</option>
+								<option value="Maitighar">Maitighar</option>
+								<option value="Mangalbazar">Mangalbazar</option>
+								<option value="Sankhamul">Sankhamul</option>
+								<option value="Kumaripati">Kumaripati</option>
+							</select><br/>
+						</td>
+					</tr>
+					<tr>
+						<td>Account No </td>
+						<td><input type="text" name='account_no' id='acc'><br/></td>
+					</tr>
+					<tr>
+						<td>Amount </td>
+						<td><input type="radio" name="account" value="Saving">Saving
+						<input type="radio" name="account" value="Current">Current<br/></td>
+					</tr>
+					<tr>
+						<td>Date </td>
+						<td><input type="Date" name="date"><br/></td>
+					</tr>
+					<tr>
+					<td colspan="2" style='text-align: center'><input type="submit" value="Submit" onclick="validation()"></td>
+				</form>
+			</table>
+		</div>
+	</body>
+</html>
